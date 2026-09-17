@@ -51,7 +51,19 @@ uv run jupyter lab
 
 ## Status
 
-🚧 In progress — data loading, cleaning, and EDA complete. Next: feature engineering.
+✅ Pipeline complete — load → clean → EDA → feature engineering → ML →
+evaluation → prediction, all steps built, executed, and tested end-to-end.
+
+## Final Results
+
+- **Best model:** Random Forest — 33.6% RMSE improvement over a naive
+  "predict yesterday's revenue" baseline.
+- **14-day forecast (from Dec 10, 2011):** ~£494,802 total predicted revenue,
+  ~£35,343/day average (vs. ~£43,968/day actual average over the prior 30 days).
+- **Residual analysis:** mean residual ~£2,523 — a mild but not alarming bias
+  relative to typical daily revenue (~£20-30K/day).
+- Full write-up, limitations, and next steps: see the "Final Report" section
+  at the bottom of `notebooks/07_prediction_report.ipynb`.
 
 ## Key Findings So Far (from EDA)
 

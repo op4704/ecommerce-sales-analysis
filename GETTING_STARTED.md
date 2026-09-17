@@ -156,7 +156,11 @@ so VS Code's Jupyter extension and linting use the right environment.
 - [x] Data cleaning (`cleaning.py`, notebook 02)
 - [x] Test suite (`tests/`, 11 tests)
 - [x] Notebook 03 — EDA & visualization
-- [ ] Notebook 04 — feature engineering
-- [ ] Notebook 05 — model training
-- [ ] Notebook 06 — model evaluation
-- [ ] Notebook 07 — prediction & final report
+- [x] Notebook 04 — feature engineering
+- [x] Notebook 05 — model training
+- [x] Notebook 06 — model evaluation
+- [x] Notebook 07 — prediction & final report
+
+Pipeline complete end-to-end. See `reports/sales_forecast.csv` for the
+latest 14-day forecast and the final report section at the bottom of
+`notebooks/07_prediction_report.ipynb` for the full write-up.
