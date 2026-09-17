@@ -51,4 +51,12 @@ uv run jupyter lab
 
 ## Status
 
-🚧 In progress — scaffolding + data ingestion stage.
+🚧 In progress — data loading, cleaning, and EDA complete. Next: feature engineering.
+
+## Key Findings So Far (from EDA)
+
+- UK accounts for 82.8% of total revenue — heavily concentrated in one market.
+- Top 20% of customers generate 77.2% of total revenue (classic 80/20 pattern).
+- Revenue per line item has a long right tail (99th percentile ≈ £204, max ≈ £168K)
+  from large wholesale orders — legitimate sales, not data errors.
+- See `notebooks/03_eda_visualization.ipynb` for trend/seasonality charts.

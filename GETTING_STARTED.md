@@ -155,7 +155,7 @@ so VS Code's Jupyter extension and linting use the right environment.
 - [x] Data loading (`data_loader.py`, notebook 01)
 - [x] Data cleaning (`cleaning.py`, notebook 02)
 - [x] Test suite (`tests/`, 11 tests)
-- [ ] Notebook 03 — EDA & visualization
+- [x] Notebook 03 — EDA & visualization
 - [ ] Notebook 04 — feature engineering
 - [ ] Notebook 05 — model training
 - [ ] Notebook 06 — model evaluation
