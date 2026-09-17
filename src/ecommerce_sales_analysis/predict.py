@@ -1,16 +1,6 @@
 """
-Prediction utilities for the E-Commerce Sales Analysis & Prediction System.
-
-Why a separate predict module?
----------------------------------
-Forecasting *future* days is fundamentally different from evaluating a model
-on a held-out test set. In evaluation (Notebook 05/06), lag and rolling
-features for the test period could be computed directly from real historical
-data, because that data already existed. For real future predictions, days
-2, 3, 4... don't have real "yesterday" values yet - each new prediction has
-to become part of the history used to predict the day after it. This module
-implements that iterative (recursive) forecasting loop explicitly, instead
-of leaving it as an easy-to-get-wrong ad-hoc notebook loop.
+Recursive multi-day forecasting: each day's prediction feeds back in as
+history for the next day's lag/rolling features.
 """
 
 import pandas as pd

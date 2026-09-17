@@ -1,21 +1,9 @@
 """
-Data loading utilities for the E-Commerce Sales Analysis & Prediction System.
+Loads the Online Retail II dataset and caches it locally as CSV.
 
-Why a dedicated loader module?
--------------------------------
-Keeping "how do I get the raw data" separate from "what do I do with it" means:
-  - Notebooks stay focused on analysis, not plumbing.
-  - We can swap the data source (API, local file, DB) without touching
-    downstream cleaning/EDA/modeling code.
-  - We cache the raw pull to disk so we don't re-download a 40+MB file
-    every time we run a notebook.
-
-Note on source: the `ucimlrepo` package's API endpoint for this dataset
-(id=502) currently returns "not available for import" even though the
-dataset page itself is live. We work around this by downloading the
-official static file bundle directly from UCI's archive instead
-(https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip),
-which is the same data UCI serves on the dataset's download button.
+Note: the `ucimlrepo` package's API for this dataset (id=502) returns
+"not available for import" even though the dataset page is live, so we
+pull the static file bundle directly from UCI's archive instead.
 """
 
 import io

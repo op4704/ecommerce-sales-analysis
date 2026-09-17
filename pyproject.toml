@@ -1,7 +1,7 @@
 [project]
 name = "ecommerce-sales-analysis"
 version = "0.1.0"
-description = "Add your description here"
+description = "E-commerce sales analysis and revenue forecasting pipeline"
 readme = "README.md"
 authors = [
     { name = "om panchal", email = "panchalom470@gmail.com" }

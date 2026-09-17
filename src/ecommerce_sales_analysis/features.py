@@ -1,16 +1,6 @@
 """
-Feature engineering utilities for the E-Commerce Sales Analysis & Prediction System.
-
-Why a separate features module?
----------------------------------
-Forecasting models can't use raw transaction rows directly - a "sale" is an
-event, not a time series. We first have to aggregate transactions into a
-regular time series (daily total revenue), then derive the actual model
-inputs from that series: calendar signals, recent history (lags), and
-smoothed trend (rolling averages).
-
-Doing this in one documented module (instead of ad-hoc notebook cells) means
-the exact same feature logic applies whether we're training or predicting.
+Feature engineering for the daily revenue forecast: aggregation, calendar
+signals, lag features, and rolling stats.
 """
 
 import pandas as pd

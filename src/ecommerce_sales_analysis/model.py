@@ -1,13 +1,4 @@
-"""
-Model training utilities for the E-Commerce Sales Analysis & Prediction System.
-
-Why a separate model module?
-------------------------------
-Keeps model definitions, the train/test split strategy, and evaluation
-metrics in one tested, reusable place - so notebooks 05/06/07 (train,
-evaluate, predict) all call the same functions instead of redefining
-subtly different logic in each notebook.
-"""
+"""Model training, baseline comparison, and evaluation metrics."""
 
 import numpy as np
 import pandas as pd

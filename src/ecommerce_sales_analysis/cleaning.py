@@ -1,15 +1,4 @@
-"""
-Data cleaning utilities for the E-Commerce Sales Analysis & Prediction System.
-
-Why a separate cleaning module?
---------------------------------
-Cleaning decisions (what counts as "invalid", how we handle missing IDs,
-whether we drop or keep cancellations) are business/analysis decisions, not
-one-off notebook hacks. Putting them in a tested, importable function means:
-  - The same cleaning logic applies identically whether we're exploring
-    in a notebook or running the real forecasting pipeline.
-  - Every decision is documented in one place, with the reasoning attached.
-"""
+"""Cleaning logic for the raw Online Retail II transaction data."""
 
 import pandas as pd
 
